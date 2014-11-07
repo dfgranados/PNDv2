@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><! <html lang="en" ng-app="myApp" class="no-js"> <!<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Paula Pavlova - Class Schedule</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Daniel Granados">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="assets/css/icomoon.css">
+  <link href="assets/css/animate-custom.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+</head>
+<body>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" ng-app="myApp">
+  
+  
+    <div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="text-align: left;">
+            <span class="icon icon-menu" style="font-size:20px; font-weight:100; color:#ffffff;"></span>
+          </button>
+         <!--  <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a> -->
+        </div>
+       <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                  <li><a href="index.html" class="smoothScroll">home</a></li>
+                  <li> <a href="#donate" class="smoothScroll"> donate</a></li>
+                  <li> <a href="#schedule" class="smoothScroll"> schedule</a></li>
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">offerings <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                          <li><a href="offerings.html">semi-private/private classes</a></li>
+                          <li><a href="#">workshops</a></li>
+                          <li><a href="#">dog illustrations</a></li>
+                    </ul>
+                  </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+                  <div class="social-icons" style="right: 120px;">
+                            <a class="icon icon-envelop" href="mailto:paulaipavlova@gmail.com"></a>
+                  </div>
+                  <div class="social-icons" style="right: 80px;">
+                            <a href="https://www.facebook.com/paula.pavlova.3" target="_blank" class="icon icon-facebook"></a>
+                  </div>
+                  <div class="social-icons" style="right: 40px;">
+                            <a href="http://instagram.com/pipndipyoga" target="_blank" class="icon icon-instagram" ></a>
+                  </div>
+                  <div class="social-icons" style="right: 0px;">
+                            <a href="https://soundcloud.com/pipndipyoga" target="_blank" class="icon icon-soundcloud" ></a>
+                  </div>
+      </div>
+    </div>
+    </div>
+
+
+
+     <div id="schedule">
+     	<br>
+     <div class="schedule-container">
+      <div ng-controller="scheduleCtrl" class="panel panel-default" style="">
+                <div ng-repeat="a in repeatQ(14) track by $index ">
+                      <div class="day-divider">
+                          {{dayAsText($index)}}
+                        </div>
+                       <div class="classListing">
+                       	 <div ng-repeat="yclass in yClass | filter: { repeat: currentDayOfWeek($index)}">
+	                       	 <div ng-if="yclass.yogaType != 'no classes today!'">
+		                           <span style="color: rgb(32, 178, 170)" >{{yclass.time}} {{yclass.yogaType}}   </span>
+		                            at
+		                           {{yclass.studio}} ({{yclass.location}})
+		                           <span class="glyphicon glyphicon-map-marker" style="float:right; color: {{yclass.color}}"></span> 
+		                           <a href= "{{yclass.link}}" target="_blank" class="glyphicon glyphicon-link" style="float:right"></a>  
+		              </div>
+		              <div ng-if="yclass.yogaType == 'no classes today!'">
+		                         No classes this day!
+		              </div>
+                   	 </div>
+                    </div>
+          </div> 
+        </div>
+
+
+
+    <!-- ==== MAP SECTION ==== -->
+    <div class="row">
+         <div id="schedule-map"></div>
+    </div>
+</div>
+</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/retina.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+  <script type="text/javascript" src="assets/js/schedMap.js"></script>
+  </body>
+
+
+
+
+
+
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/services.js"></script>
+  <script src="assets/js/controllers.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script src="assets/lib/moment/moment.js"></script>
+  <script src="assets/lib/angular-moment/angular-moment.js"></script>
+</body>
+</html>
