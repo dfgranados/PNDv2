@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Paula Pavlova Yoga & Art</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Daniel Granados">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="assets/css/icomoon.css">
+  <link href="assets/css/animate-custom.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+</head>
+<body>
+<!--   <br>
+  <br>
+  <br>
+
+  <ul class="menu">
+    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view2">view2</a></li>
+  </ul>
+
+  <div ng-view></div> -->
+
+
+
+
+<body ng-app="myApp" data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  
+  
+    <div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="text-align: left;">
+            <span class="icon icon-menu" style="font-size:20px; font-weight:100; color:#ffffff;"></span>
+          </button>
+         <!--  <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a> -->
+        </div>
+         <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                  <li><a href="#myCarousel" class="smoothScroll">home</a></li>
+                  <li> <a href="#donate" class="smoothScroll"> donate</a></li>
+                  <li> <a href="#schedule" class="smoothScroll"> schedule</a></li>
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">offerings <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                          <li><a href="offerings.html">semi-private/private classes</a></li>
+                          <li><a href="#">workshops</a></li>
+                          <li><a href="#">dog illustrations</a></li>
+                    </ul>
+                  </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+
+                  <div class="social-icons" style="right: 120px;">
+                            <a class="icon icon-envelop" href="mailto:paulaipavlova@gmail.com"></a>
+                  </div>
+                  <div class="social-icons" style="right: 80px;">
+                            <a href="https://www.facebook.com/paula.pavlova.3" target="_blank" class="icon icon-facebook"></a>
+                  </div>
+                  <div class="social-icons" style="right: 40px;">
+                            <a href="http://instagram.com/pipndipyoga" target="_blank" class="icon icon-instagram" ></a>
+                  </div>
+                  <div class="social-icons" style="right: 0px;">
+                            <a href="https://soundcloud.com/pipndipyoga" target="_blank" class="icon icon-soundcloud" ></a>
+                  </div>
+      </div>
+    </div>
+</div>
+
+
+  
+  
+    <!-- ==== HEADERWRAP ==== -->
+      <!-- <div id="headerwrap" name="home">
+      <header class="clearfix">
+            <h2></h2>
+            <p></p>
+            <p></p>
+        </header>     
+      </div> --><!-- /headerwrap -->
+
+    <!-- ==== GREYWRAP ==== -->
+    <!-- <div id="greywrap">
+      <div class="row">
+        <div class="col-lg-4 callout">
+          <span class="icon icon-heart"></span>
+          <h2>"The journey of life is sweeter when traveled with a dog"</h2>
+          <p></p>
+        </div>
+          
+        <div class="col-lg-4 callout">
+          <span class="icon icon-eye"></span>
+          <h2>Retina Ready</h2>
+          <p>You can use this theme with your iPhone, iPad or MacBook Pro. This theme is retina ready and that is awesome. </p>
+        </div>  
+        
+        <div class="col-lg-4 callout">
+          <span class="icon icon-heart"></span>
+          <h2>Crafted with Love</h2>
+          <p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love.   </p>
+        </div>  
+      </div>
+    </div> -->
+    <!-- Carousel
+      ================================================== -->
+      <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="assets/img/header_bg1.jpg" class="img-responsive">
+          </div>
+          <div class="item">
+            <img src="assets/img/header_bg2.jpg" class="img-responsive">
+          </div>
+          <div class="item">
+            <img src="assets/img/header_bg3.jpg" class="img-responsive">
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="icon-next"></span>
+        </a>  
+      </div>
+      <!-- /.carousel -->
+
+
+    <!-- ==== ABOUT ==== -->
+    <div class="container" name="about" id="about">
+      <div class="row white">
+      <br>
+        <h1 class="centered">"The journey of life is sweeter when traveled with a dog."</h1>
+        <p class="text-center">- Unknown</p>
+        <hr>
+        
+        <div class="col-lg-6">
+          <p>Paula has always felt a deep connection to animals and most especially, dogs. Dogs 
+          are a living example of the infinite compassion and unconditional love available in 
+          the world. As she grew older, Paula found yoga, and began to realize the profound 
+          effect that the practice had on her ability to find that same kind of pure love within 
+          our human experience. 
+        </br>
+          Yoga quickly became a personal journey, full of lessons in life and nature. The 
+          lightness, joy, and jocular spirit that yoga creates, is what kept bringing Paula back 
+          to her mat, and eventually to her path as a dedicated student and instructor. 
+          As an instructor, Paula safely and carefully creates sequences that are both 
+          challenging and playful. </p>
+        </div><!-- col-lg-6 -->
+        
+        <div class="col-lg-6">
+          <p>
+          She deeply cares about offering a space where the physical 
+          asanas become an expression of each individual’s passionate soul with a musical 
+          selection that is focused on relaxing the mind, motivating the body, and balancing 
+          the spirit. 
+        </br>
+          Pipndipyoga came into being as the union of Paula’s love for yoga, and the greatest 
+          teacher she has ever had in her life, her furry best friend, Diplo Weasley. This 
+          website serves as a dedication to the luminous animal spirit that lives within each of 
+          us. 
+        </br>
+          Order a commissioned illustration of your pet, book a private or semi-private yoga 
+          class, browse my public schedule, contribute to local shelters by purchasing a 
+          sticker, or connect with me – I would love to hear from you! </p>
+        </div><!-- col-lg-6 -->
+      </div>
+    </div>
+    
+    <!-- ==== SECTION DIVIDER1 -->
+<!--    <section class="section-divider textdivider divider1">
+      <div class="container">
+        <h1>DESIGN EXPAND BOUNDARIES</h1>
+        <hr>
+        <p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
+      </div>
+    </section> -->
+    
+    
+    <!-- ==== SERVICES ==== -->
+<!--    <div class="container" id="services" name="services">
+      <br>
+      <br>
+      <div class="row">
+        <h2 class="centered">ONE BRAND, ONE VOICE.</h2>
+        <hr>
+        <br>
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t credible aren’t viable.
+          </p>
+          <p>We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
+          <p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s when the brand can truly flex its muscles.</p>
+        </div>
+      </div> -->
+      
+<!--      <div class="row">
+        <h2 class="centered">MOBILE FIRST THINKING, ALWAYS.</h2>
+        <hr>
+        <br>
+        <div class="col-lg-offset-2 col-lg-8">
+          <img class="img-responsive" src="assets/img/iphone.png" alt="">
+        </div>
+      </div>
+    </div> -->
+      
+
+    <!-- ==== SECTION DIVIDER2 -->
+<!--    <section class="section-divider textdivider divider2">
+      <div class="container">
+        <h1>DESIGN IS AN INTERACTION</h1>
+        <hr>
+        <p>To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take part in the conversation.</p>
+      </div>
+    </section> -->
+
+    <!-- ==== TEAM MEMBERS ==== -->
+<!--    <div class="container" id="team" name="team">
+    <br>
+      <div class="row white centered">
+        <h1 class="centered">MEET OUR AWESOME TEAM</h1>
+        <hr>
+        <br>
+        <br>
+        <div class="col-lg-3 centered">
+          <img class="img img-circle" src="assets/img/team/team01.jpg" height="120px" width="120px" alt="">
+          <br>
+          <h4><b>Mike Arney</b></h4>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>Mike combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
+        </div>
+        
+        <div class="col-lg-3 centered">
+          <img class="img img-circle" src="assets/img/team/team02.jpg" height="120px" width="120px" alt="">
+          <br>
+          <h4><b>Tim Davies</b></h4>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>Tim is an experienced marcoms practitioner and manages projects from inception to delivery. He understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
+        </div>
+        
+        <div class="col-lg-3 centered">
+          <img class="img img-circle" src="assets/img/team/team03.jpg" height="120px" width="120px" alt="">
+          <br>
+          <h4><b>Michele Lampa</b></h4>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>Be a creative director is a hard task, but Michele loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
+        </div>
+        
+        <div class="col-lg-3 centered">
+          <img class="img img-circle" src="assets/img/team/team04.jpg" height="120px" width="120px" alt="">
+          <br>
+          <h4><b>Jaye Smith</b></h4>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>Jaye began making websites when animated logos and scrolling text were cool, but has since found a love for simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
+        </div>
+        
+      </div>
+    </div> -->
+
+    <!-- ==== GREYWRAP ==== -->
+<!--    <div id="greywrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 centered">
+            <img class="img-responsive" src="assets/img/macbook.png" align="">
+          </div>
+          <div class="col-lg-4">
+            <h2>We Are Hiring!</h2>
+            <p>Do you want to be one of use? Sure you want, because we are an awesome team!. Here we work hard every day to craft pixel perfect sites.</p>
+            <p><a class="btn btn-success">Contact Us</a></p>
+          </div>          
+        </div>
+      </div>
+      <br>
+      <br>
+    </div> -->
+    
+    <!-- ==== SECTION DIVIDER3 -->
+<!--    <section class="section-divider textdivider divider3">
+      <div class="container">
+        <h1>DESIGN SOLVE PROBLEMS</h1>
+        <hr>
+        <p>From the purely practical to the richly philosophical, design is the solution to a host of challenges.</p>
+      </div>
+    </section> -->
+
+    <!-- ==== SECTION DIVIDER6 ==== -->
+    <section class="section-divider textdivider divider6">
+      <div class="container">
+        <h1 class="class-contact">Contact Me for Private or Small
+        </br>Yoga Classes in DC and Virginia</h1>
+        <hr>
+        <p></p>
+        <p></p>
+        <p><a class="icon icon-envelop" href="mailto:paulaipavlova@gmail.com"></a> &nbsp; | &nbsp;<a class="icon icon-facebook" href="https://www.facebook.com/paula.pavlova.3"></a>  </p>
+      </div>
+    </section>
+    
+    <!-- ==== PORTFOLIO ==== -->
+    <div id="greywrap">
+    <div class="container" id="donate">
+    <br>
+      <div class="row">
+        <br>
+        <h1 class="centered">HELP SHELTERS BY DONATING</h1>
+        <hr>
+        <p class="text-center">Please take time to donate or volunteer at your local shelters, or purchase any of my stickers and all proceeds will go to the <a href="http://support.washhumane.org/site/PageServer">Washington Humane Society.</a> The stickers show characters of an illustrated book I wrote, so feel free to check out each of their stories.</p>
+        <h3 class="text-center"><a href="http://support.washhumane.org/site/PageServer">Go to Store Page</a></h3>
+        <br>
+      </div>
+      <div class="container">
+      <div class="row"> 
+      
+        <!-- PORTFOLIO IMAGE 1 -->
+        <div class="col-lg-3 ">
+            <div class="grid mask">
+            <figure>
+              <img class="img-responsive" src="assets/img/stickers/sticker01.jpg" alt="">
+              <figcaption>
+                <h5>Guru</h5>
+                <a data-toggle="modal" href="#myModal1" class="btn btn-primary btn-lg">story</a>
+              </figcaption>
+            </figure>
+            </div>
+        </div>
+        
+        
+             <!-- MODAL-->
+                  
+              <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">a guru in India</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><img class="img-responsive" src="assets/img/stickers/sticker01.jpg" alt=""></p>
+                      <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+                      <p><b><a href="#">Buy in Store</a></b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+        
+        
+        <!-- PORTFOLIO IMAGE 2 -->
+        <div class="col-lg-3">
+            <div class="grid mask">
+            <figure>
+              <img class="img-responsive" src="assets/img/stickers/sticker02.jpg" alt="">
+              <figcaption>
+                <h5>Artist</h5>
+                <a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">story</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+            </div><!-- /grid-mask -->
+        </div><!-- /col -->
+
+        
+             <!-- MODAL-->
+                  
+              <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">an artist in Bohemia</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><img class="img-responsive" src="assets/img/stickers/sticker02.jpg" alt=""></p>
+                      <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+                      <p><b><a href="#">Buy in Store</a></b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+        
+        
+        
+        <!-- PORTFOLIO IMAGE 3 -->
+        <div class="col-lg-3">
+            <div class="grid mask">
+            <figure>
+              <img class="img-responsive" src="assets/img/stickers/sticker03.jpg" alt="">
+              <figcaption>
+                <h5>Explorer</h5>
+                <a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-lg">story</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+            </div><!-- /grid-mask -->
+        </div><!-- /col -->
+
+        
+             <!-- MODAL-->
+                  
+              <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">an explorer in Africa</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><img class="img-responsive" src="assets/img/stickers/sticker03.jpg" alt=""></p>
+                      <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+                      <p><b><a href="#">Buy in Store</a></b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+        
+        
+
+        <!-- PORTFOLIO IMAGE 4 -->
+        <div class="col-lg-3 ">
+            <div class="grid mask">
+            <figure>
+              <img class="img-responsive" src="assets/img/stickers/sticker04.jpg" alt="">
+              <figcaption>
+                <h5>Scientist</h5>
+                <a data-toggle="modal" href="#myModal4" class="btn btn-primary btn-lg">story</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+            </div><!-- /grid-mask -->
+        </div><!-- /col -->
+
+        
+             <!-- MODAL-->
+                  
+              <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">a scientist in Bolivia</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><img class="img-responsive" src="assets/img/stickers/sticker04.jpg" alt=""></p>
+                      <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+                      <p><b><a href="#">Buy in Store</a></b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+        
+        
+        </div><!-- /row -->
+        <br>
+        <div class="row"> 
+        <!-- PORTFOLIO IMAGE 5 -->
+        <div class="col-lg-3">
+            <div class="grid mask">
+            <figure>
+              <img class="img-responsive" src="assets/img/stickers/sticker05.jpg" alt="">
+              <figcaption>
+                <h5>Same Paws</h5>
+                <a data-toggle="modal" href="#myModal5" class="btn btn-primary btn-lg">story</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+            </div><!-- /grid-mask -->
+        </div><!-- /col -->
+
+        
+             <!-- MODAL-->
+                  
+              <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">the same paws as you</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><img class="img-responsive" src="assets/img/stickers/sticker05.jpg" alt=""></p>
+                      <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+                      <p><b><a href="#">Buy in Store</a></b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+        
+        
+        
+        <!-- PORTFOLIO IMAGE 6 -->
+        <div class="col-lg-3">
+            <div class="grid mask">
+            <figure>
+              <img class="img-responsive" src="assets/img/stickers/sticker06.jpg" alt="">
+              <figcaption>
+                <h5>Buy</h5>
+                <a data-toggle="modal" href="#myModal6" class="btn btn-primary btn-lg">story</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+            </div><!-- /grid-mask -->
+        </div><!-- /col -->
+
+        
+             <!-- MODAL-->
+                  
+              <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">a showgirl in Paris</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><img class="img-responsive" src="assets/img/stickers/sticker06.jpg" alt=""></p>
+                      <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+                      <p><b><a href="#">Buy in Store</a></b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+        
+        
+
+        <!-- PORTFOLIO IMAGE 6 -->
+        <div class="col-lg-3">
+            <div class="grid mask">
+            <figure>
+              <img class="img-responsive" src="assets/img/stickers/sticker07.jpg" alt="">
+              <figcaption>
+                <h5>Paws 4 Peace</h5>
+                <a data-toggle="modal" href="#myModal7" class="btn btn-primary btn-lg">story</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+            </div><!-- /grid-mask -->
+        </div><!-- /col -->
+
+        
+             <!-- MODAL-->
+                  
+              <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">paws 4 peace</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><img class="img-responsive" src="assets/img/stickers/sticker07.jpg" alt=""></p>
+                      <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+                      <p><b><a href="#">Buy in Store</a></b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+        
+        
+
+        <!-- PORTFOLIO IMAGE 6 -->
+        <div class="col-lg-3">
+            <div class="grid mask">
+            <figure>
+              <img class="img-responsive" src="assets/img/stickers/sticker08.jpg" alt="">
+              <figcaption>
+                <h5>Athlete</h5>
+                <a data-toggle="modal" href="#myModal8" class="btn btn-primary btn-lg">story</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+            </div><!-- /grid-mask -->
+        </div><!-- /col -->
+
+        
+             <!-- MODAL-->
+                  
+              <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">an athlete in North America</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><img class="img-responsive" src="assets/img/stickers/sticker08.jpg" alt=""></p>
+                      <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+                      <p><b><a href="#">Buy in Store</a></b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+        
+        
+      </div><!-- /row -->
+      <br>
+      <br>
+    </div><!-- /row -->
+  </div><!-- /container -->
+</div>
+
+    <!-- ==== SECTION DIVIDER4 ==== -->
+    <!-- <section class="section-divider textdivider divider4">
+      <div class="container">
+        <h1>DESIGN CREATES EMOTIONAL CONNECTION</h1>
+        <hr>
+        <p>There’s more to design than meets the eye. It’s when it meets the heart that design creates a meaningful, lasting connection with the audience.</p>
+      </div>
+    </section> -->
+    
+    <!-- ==== BLOG ==== -->
+    <!-- <div class="container" id="blog" name="blog">
+    <br>
+      <div class="row">
+        <br>
+        <h1 class="centered">WE ARE STORYTELLERS</h1>
+        <hr>
+        <br>
+        <br>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-6 blog-bg">
+          <div class="col-lg-4 centered">
+          <br>
+            <p><img class="img img-circle" src="assets/img/team/team04.jpg" width="60px" height="60px"></p>
+            <h4>Jaye Smith</h4>
+            <h5>Published Aug 30.</h5>
+          </div>
+          <div class="col-lg-8 blog-content">
+            <h2>We Define Success</h2>
+            <p>Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.</p>
+            <p>In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.</p>
+            <p><a href="#" class="icon icon-link"> Read More</a></p>
+            <br>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 blog-bg">
+          <div class="col-lg-4 centered">
+          <br>
+            <p><img class="img img-circle" src="assets/img/team/team03.jpg" width="60px" height="60px"></p>
+            <h4>Michele Lampa</h4>
+            <h5>Published Aug 28.</h5>
+          </div>
+          <div class="col-lg-8 blog-content">
+            <h2>A Beautiful Story</h2>
+            <p>Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.</p>
+            <p>In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.</p>
+            <p><a href="#" class="icon icon-link"> Read More</a></p>
+            <br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div> -->
+    
+<!--    <div class="container" id="contact" name="contact">
+      <div class="row">
+      <br>
+        <h1 class="centered">THANKS FOR VISITING US</h1>
+        <hr>
+        <br>
+        <br>
+        <div class="col-lg-4">
+          <h3>Contact Information</h3>
+          <p><span class="icon icon-home"></span> Some Address 987, NY<br/>
+            <span class="icon icon-phone"></span> +34 9884 4893 <br/>
+            <span class="icon icon-mobile"></span> +34 59855 9853 <br/>
+            <span class="icon icon-envelop"></span> <a href="#"> agency@blacktie.co</a> <br/>
+            <span class="icon icon-twitter"></span> <a href="#"> @blacktie_co </a> <br/>
+            <span class="icon icon-facebook"></span> <a href="#"> BlackTie Agency </a> <br/>
+          </p>
+        </div><!-- col -->
+        
+        <!-- <div class="col-lg-4">
+          <h3>Newsletter</h3>
+          <p>Register to our newsletter and be updated with the latests information regarding our services, offers and much more.</p>
+          <p>
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="inputEmail1" class="col-lg-4 control-label"></label>
+                <div class="col-lg-10">
+                  <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="text1" class="col-lg-4 control-label"></label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="text1" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-10">
+                  <button type="submit" class="btn btn-success">Sign in</button>
+                </div>
+              </div>
+             </form>
+          </p>
+        </div>
+        
+        <div class="col-lg-4">
+          <h3>Support Us</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+
+      </div> -->
+    
+    <!-- </div> -->
+
+    <!-- ==== MAP SECTION ==== -->
+    <div class="row" id="schedule" ng-controller="scheduleCtrl">
+      <br>
+      <br>
+      <h2 class="text-center">Where am I teaching today?  (<a href="schedule.html">or see full schedule</a>)</h2>
+         <div ng-controller="scheduleCtrl" >
+                        <br>
+                         <div class="text-center" href="#" ng-repeat="yclass in yClass | filter: {repeat: currentDayOfWeek($index)}">
+                               <div ng-if="yclass.yogaType != 'no classes today!'">
+                                      <h4>{{yclass.studio}} ({{yclass.location}})  for {{yclass.time}} {{yclass.yogaType}}  <a href= "{{yclass.link}}" target="_blank" class="glyphicon glyphicon-link" ></a>  <span style="color: {{yclass.color}}"class="glyphicon glyphicon-map-marker" ></span> </h4>
+                             </div>
+                              <div ng-if="yclass.yogaType == 'no classes today!'">
+                                            <h4>No classes today!</h4>
+                              </div>
+                        </div>
+                        <br>
+                          <div id="map"></div>
+     </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/retina.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+  <script type="text/javascript" src="assets/js/maps.js"></script>
+  </body>
+
+
+
+
+
+
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/services.js"></script>
+  <script src="assets/js/controllers.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script src="assets/lib/moment/moment.js"></script>
+  <script src="assets/lib/angular-moment/angular-moment.js"></script>
+</body>
+</html>
